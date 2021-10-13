@@ -1,0 +1,95 @@
+body {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+	font-weight: 400;
+	
+}
+
+/* User Story #1 - The page's main content */
+#main-doc {
+	display: grid;
+	float: right;
+	width: 80%;
+}
+
+/* User Story #2 - Section elements */
+.main-section {
+	margin-top: -16px;
+	margin-left: 7px;
+	padding: 10px;
+}
+ /* User Story #3 - Header element which contains text that describes the topic of the section*/
+header {
+ background-color: whitesmoke;
+ padding: 15px;
+ font-size: 26px;
+}
+article{
+	background-color: honeydew;
+	padding: 10px;
+}
+/* User Story #4 -  ID that corresponds with the text of each header contained within it*/
+
+
+/* User Story #5 - <p> elements */
+p {
+	color: f8f8f8;
+}
+
+/* User Story #6 - <code> elements */
+code {
+	color: tomato ;
+}
+code:hover {
+	background-color: lightskyblue;
+	padding: 10px;
+}
+/* User Story #7 - <li> elements*/
+li {
+	list-style-type: none;
+}
+
+/* User Story #8 - <nav> - element */
+nav {
+
+}
+
+/* User Story #9 - desc the topic od the tech doc*/
+nav > p {
+	text-align: center;
+}
+
+/* User Story #10 - link <a> elements with the class of nav-link */
+.nav-link {
+ 	display: block;
+	font-size: 1em;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	text-decoration: none;
+}
+.nav-link:hover {
+	background-color: honeydew;
+}
+/* User Story #14 - left side, always visible */
+#navbar {
+	background-color: yellowgreen;
+	display: block;
+	float: left;
+	padding: 10px;
+	width: 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/* User Story #15 - media query*/
+@media screen and (max-width: 500px) {
+	#navbar {
+	  display: none;
+	}
+	#main-doc {
+		width: 100%;
+		margin: 15px;
+	}
+  }
