@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCC - Build a Personal Portfolio Webpage</title>
+    <meta name="author" content="Đenan Cigura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!--User Story #6 #7 - NAVIGATION -->
+    <nav id="navbar">
+        <!--Logo-->
+        <div>
+          <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
+        </div>
+        <!--Menu Items-->
+        <ul>
+          <li><a href="index.html"><i class="fas fa-hat-cowboy"></i> Home</a></li>
+          <li><a href="#about"><i class="fab fa-battle-net"></i> About</a></li>
+          <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="#services"><i class="fas fa-medal"></i> Services</a></li>
+          <li><a href="#contact"><i class="fas fa-mobile-alt"></i> Contact</a></li>
+        </ul>
+      </nav>
+    
+    <!--User Story #1 - WELCOME SECTION-->
+    <section id="welcome-section">
+        <div id="welcome-container"> 
+            <h1>HELLO AND WELCOME !</h1>
+            <p>This is my Responsive Web Design Project - Build a Personal Portfolio Webpage. So, let it be... </p>
+            <h1><i class="far fa-smile-wink fa-4x"></i></h1>
+            <a class="btn" href="#about">Find out more</a>
+        </div> 
+    </section>
+    <!--ABOUT ME-->
+    <section id="about">
+        <h1>About</h1>
+        <hr class="divider">
+            <p>I Design & Build</p>
+            <i class="fab fa-html5 fa-4x"></i>
+            <i class="fab fa-css3 fa-4x"></i>
+            <p>Hello, my name is Đenan Cigura and this is my Freecodecamp RWD Project, builth with pure html and css! You can find more down the hill...</p>
+        <div id="profile"></div>
+            <a  id="profile-link"
+                href="https://www.freecodecamp.org/thecigura" 
+                target="_blank">
+                <i class="fas fa-code fa-2x"></i>
+                freeCodeCamp
+            </a>
+            <a  id="profile-link"
+                href="https://github.com/thecigura" 
+                target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+                GitHub
+            </a>
+            <a  id="profile-link"
+                href="https://facebook.com/thecigura" 
+                target="_blank">
+                <i class="fab fa-facebook-square fa-2x"></i>
+                Facebook
+            </a>
+        </div>
+    </section>
+    <!--User Story #3 #4 #5 - PROJECT SECTION-->
+    
+    <section class="projects-section" id="projects">
+        <h1>Sample Projects</h1>
+        <hr class="divider">  
+        <div class="grid-container">
+            <div class="grid-box">
+                <a href="http://bp-merol.com"  target="_blank">
+                    <img src="https://picsum.photos/320/240" alt="Merol"> 
+                </a>
+                <h3 class="project-tile">Merol</h3>
+            </div>
+            <div class="grid-box">
+                <a href="http://bionatura.ba"  target="_blank">
+                    <img src="https://loremflickr.com/320/240/nature" alt="Bionatura"> 
+                </a>
+                <h3 class="project-tile">Bionatura</h3>
+            </div>
+            <div class="grid-box">
+                <a href="http://terabajt.ba" target="_blank">
+                    <img src="https://loremflickr.com/320/240/computer" alt="Terabajt"> 
+                </a>
+                <h3 class="project-tile">Terabajt</h3>
+            </div>    
+            <div class="grid-box">
+                <a href="http://tiptopgumi.ba"  target="_blank">
+                    <img src="https://loremflickr.com/320/240/car" alt="TipTopGumi"> 
+                </a> 
+                <h3 class="project-tile">TipTopGumi</h3>
+            </div>
+            <div class="grid-box">
+                <a href="http://sgi.ba"  target="_blank">
+                    <img src="https://loremflickr.com/320/240/tech" alt="sgi"> 
+                </a> 
+                <h3 class="project-tile">SGI</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+    <h1 id="services">What I do</h1>
+    <hr class="divider">
+    <section class="services">
+            <div class="service">
+            <i class="fas fa-pencil-ruler fa-4x"></i>
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-laptop-code fa-4x"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-cloud-download-alt fa-4x"></i>
+            <h3>Cloud Engineering</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-ambulance fa-4x"></i>
+            <h3>Support</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, deserunt.</p>
+        </div>
+    </section>
+    <!--Contact-->
+    <h1 id="contact">Let's Get In Touch</h1>
+    <hr class="divider">
+    <section id="contact" class="contact-section">
+    <p>Ready to start your next project? Give me a call or send an email and I will get back to you as soon as possible!</p>
+    <i class="fas fa-phone fa-4x text-muted"></i>
+    <p>+387 61 xxx xxx</p>
+    <i class="fas fa-envelope fa-4x text-muted"></i>
+    <p>email@email.com</p>
+    <!-- Footer -->
+    <footer class="bg-light pt-5">
+        <div class="container">
+            <div class="small text-center text-muted">Copyright &copy; 2020 - TheCigura</div>
+        </div>
+    </footer>
+</body>
+
+</html>

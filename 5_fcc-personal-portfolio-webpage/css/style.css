@@ -1,0 +1,231 @@
+body {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;;
+}
+
+* {
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.pt-5 {
+  padding-top: 2em !important;
+}
+
+small {
+  font-size: 80%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-white {
+  color: white;
+}
+hr.divider {
+  max-width: 5em;
+  border-width: 0.2em;
+  border-color: #fff;
+}
+/* Navigation */
+/* Navigation Menu Styling*/
+#navbar img{
+  width: 10vh;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  background: #444;
+}
+nav ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  line-height: 1;
+}
+nav ul li {
+  border-bottom: 1px dotted #ddd;
+}
+
+/*Logo Styling*/
+nav div:first-child {
+  background: #FFA600;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+nav div:first-child img {
+  filter: contrast(1);
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li a:hover {
+  background: #333;
+}
+/* Styling for larger screens  */
+@media only screen and (min-width: 768px) {
+  #navbar {
+      display: flex;
+      justify-content: space-between;
+      background: #FFA600;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      align-items: center;
+  }
+  nav ul {
+      display: flex;
+      align-items: center;
+      background: none;
+  }
+  nav ul li {
+      border-bottom: none;
+      position: relative;
+  }
+  nav div:first-child img {
+      padding-left: 1rem;
+      width: 50%;
+      height: auto;
+  }
+  nav ul li a::before, nav ul li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 4px;
+      background: blue;
+      transition: .3s width ease-in-out;
+  }
+
+  nav ul li a::before {
+      left: 0;
+  }
+  nav ul li a:hover::after, nav ul li a:hover::before {
+      width: 48%;
+  }
+  #welcome-section {
+      align-items: center;
+      height: 100vh;
+  }
+}
+
+/* Welcome Section */
+#welcome-section {
+  margin-top: 0;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://i.picsum.photos/id/1/5616/3744.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+#welcome-container {
+  padding-top: 30vh;
+}
+#welcome-container p {
+  font-size: 1.5rem;
+}
+.btn {
+  color: #fff ;
+  background-color: #ffa500;
+  padding: 10px;
+  border-radius: 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: blue;
+}
+
+/* About Section */
+#about{
+  background-color:#FFAF19;
+  padding: 2em;
+  color: #fff;
+}
+
+#profile {
+  display: flex;
+}
+#profile-link {
+  padding: 0px 50px;
+  color: azure;
+  text-decoration: none;
+}
+
+/* Project Section */
+.projects-section{
+  background-color: #004FB3;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+}
+
+.grid-box {
+  color: #fff;
+  padding: 10px;
+  font-size: 150%;
+
+  text-align: center;
+}
+.grid-box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.project-tile {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+
+.project-tile:hover {
+  background:  #ffa500;
+  border-radius: 5px;
+  
+}
+
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.services i, h3 {
+  color: #ffa500;
+}
+.service {
+  background: #ddd;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+/* That is all for this project :) */
