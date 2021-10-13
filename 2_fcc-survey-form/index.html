@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FreeCodeCamp Survey Form Project</title>
+    <meta name="author" content="Đenan Cigura">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+        <h1 id="title">Survey Form Project</h1>
+        <p id="description" class="text-center">FreeCodeCamp Responsive Web Design Project</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form_group">
+        <label for="name" id="name-label">Name</label>
+          <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="form_control" 
+            placeholder="Please enter your name"
+            required
+          />
+      </div>
+
+      <div class="form_group">
+        <label for="email" id="email-label">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            class="form_control" 
+            placeholder="Please enter your e-mail"
+            required
+          />
+        </div>
+
+      <div class="form_group">
+        <label for="age" id="number-label">Age</label>
+          <input 
+            type="number" 
+            name="age" 
+            id="number" 
+            min="10"
+            max="100"
+            class="form_control" 
+            placeholder="Age"
+          />
+        </div>
+
+      <div class="form_group">
+        <label>Education Level Completed:</label>
+          <select id="dropdown" class="form_control">         
+            <option>Select an option</option>
+            <option>University</option>
+            <option>College</option>
+            <option>High School</option>  
+            <option>None</option>
+          </select>
+      </div>
+
+      <div class="form_group">
+        <label for="gender" id="radio">Sex:</label>
+          <input type="radio" name="gender" value="male" checked> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+      </div>
+
+      <div class="form_group">
+        <label for="Gender">Check All That Apply</label>
+          <input type="checkbox" name="tattoo" value="tattoo"> I have tattoos
+          <input type="checkbox" name="piercing" value="piercing"> I have piercings
+          <input type="checkbox" name="hair" value="hair"> I have hair
+      </div>
+
+      <div class="form_group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+          rows="5" 
+          cols="33"></textarea>
+        </textarea>
+      </div>
+
+      <div class="form_group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+      <footer>
+          <p class="text-center">@Cigura FCC Survey Form Project</p>
+        </footer>
+  </div>
+</body>
+</html>
